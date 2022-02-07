@@ -1,0 +1,89 @@
+{
+  "layout": [
+    {
+      "displayName": "Adaptive Region",
+      "width": 12,
+      "resources": {
+        "en": {
+          "displayName": "Adaptive Region"
+        }
+      },
+      "slot": "re2000552",
+      "type": "header",
+      "structure": "slot"
+    },
+    {
+      "components": [
+        "product-breadcrumbs",
+        "product-details-container",
+        "product-recommendations-carousel",
+        "back-to-top-link"
+      ],
+      "width": 12,
+      "type": "main"
+    },
+    {
+      "components": [
+        "Practice Container"
+      ],
+      "width": 12,
+      "type": "main"
+    },
+    {
+      "components": [
+        "Reviews Widget Custom",
+        "Installation Guide Custom"
+      ],
+      "width": 12,
+      "type": "main"
+    },
+    {
+      "components": [
+        "Footer Widget Service Custom",
+        "Footer Widget Custom"
+      ],
+      "width": 12,
+      "type": "main"
+    },
+    {
+      "components": [
+        "TEST OSF DEMO CUSTOM"
+      ],
+      "width": 12,
+      "type": "main"
+    },
+    {
+      "components": [
+        "footer"
+      ],
+      "width": 12,
+      "type": "footer"
+    }
+  ],
+  "settings": {
+    "pageDisplayName": {
+      "en": {
+        "pageDisplayName": "Product details Clone"
+      }
+    },
+    "productTypes": [
+      "AirConditioner",
+      "AirQuality"
+    ],
+    "sites": [
+      "a7892050c1dev-store.occa.ocs.oraclecloud.com/testOSF"
+    ],
+    "products": [
+      "CAR0000005"
+    ]
+  },
+  "defaultPage": false,
+  "address": "product",
+  "title": "Product detailss Clone",
+  "shortName": "product",
+  "pageTypeDisplayName": {
+    "en": {
+      "pageTypeDisplayName": "product"
+    }
+  }
+}

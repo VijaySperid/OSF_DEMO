@@ -1,0 +1,1 @@
+export const getProductNameFetcher = store => store.endpoint('_getProduct');

@@ -1,0 +1,1 @@
+export {useGetProduct} from './productFetcher/hook';

@@ -1,0 +1,106 @@
+/* .SpecificationsWidgetCustom {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.SpecificationsWidgetCustom__Label {
+  color: #729fff;
+}
+.SpecificationsWidgetCustom__ExtraInfo {
+  background-color: red;
+  color: yellow;
+  margin-left: 5px;
+} */
+/**
+ *  CSS uses the Block Element Modifier naming convention, an example :
+.SpecificationsWidgetCustom__ElementName {
+  display: inline-block;
+  font-size: large;
+}
+ * For more information - http://getbem.com/
+ */
+ /* Specification accordion */
+ .not-visible{
+  display: none;
+}
+.visible{
+  display: block;
+}
+.specification{
+  text-align: center;
+}
+.specification h3{
+  color: #23419a;
+  line-height: 44px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+}
+
+.specification .sub-title{
+  color: #333;
+  margin: 8px 0 24px;
+  letter-spacing: .01em;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 110%;
+}
+
+.speci-acc{
+  max-width: 696px;
+  margin: 0 auto;
+  padding: 0;
+}
+.speci-section {
+  font-weight: 500;
+  font-size: 16px;
+}
+.speci-section span{
+  font-size: 16px;
+  line-height: 22px;
+  color: #23419a;
+  padding: 0;
+  position: relative;
+  border: 0;
+  cursor: pointer;
+}
+.acc-btn{
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.acc-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #757aad;
+  margin-bottom: 16px;
+  -webkit-transition: 3s ease-out;
+  transition: 3s ease-out;
+}
+.arrow{
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin-left: 10px;
+  border-top: 2px solid #23419a;
+  border-left: 2px solid #23419a;
+}
+.arrow-right{
+  transform: rotate(135deg);
+ }
+ 
+ .arrow-left{
+  transform: rotate(-45deg);
+ }
+
+.arrow-bottom{
+  transform: rotate(-135deg);
+ }
+ 
+ .arrow-top{
+  transform: rotate(45deg);
+ }
+ 

@@ -1,0 +1,19 @@
+{
+  "layout": [
+    {
+      "components": [
+        "checkout-order-confirmation"
+      ],
+      "width": 12
+    },
+    {
+      "components": [
+        "checkout-registration",
+        "continue-shopping-button"
+      ],
+      "width": 6
+    }
+  ],
+  "component": "CheckoutOrderConfirmationContainer",
+  "title": "CheckoutOrderConfirmationContainer"
+}

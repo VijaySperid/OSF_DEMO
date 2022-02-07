@@ -1,0 +1,37 @@
+{
+  "name": "osf-storefront",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Based on v2.30.1 of @oracle-cx-commerce/core-commerce-reference-store",
+  "dependencies": {
+    "@babel/helper-environment-visitor": "^7.16.7",
+    "@oracle-cx-commerce/actions": "2.30.1",
+    "@oracle-cx-commerce/commerce-utils": "2.30.1",
+    "@oracle-cx-commerce/endpoints": "2.30.1",
+    "@oracle-cx-commerce/occ-metadata": "2.30.1",
+    "@oracle-cx-commerce/oce-endpoints": "2.30.1",
+    "@oracle-cx-commerce/react-app": "2.30.1",
+    "@oracle-cx-commerce/react-widgets": "2.30.1",
+    "@oracle-cx-commerce/subscribers": "2.30.1",
+    "axios": "^0.25.0",
+    "react-slick": "^0.28.1"
+  },
+  "devDependencies": {
+    "@oracle-cx-commerce/rollup-config": "2.30.1"
+  },
+  "occ": {
+    "namespace": "occ.react",
+    "plugins": {
+      "actions": "src/plugins/actions",
+      "components": "src/plugins/components",
+      "endpoints": "src/plugins/endpoints",
+      "subscribers": "src/plugins/subscribers"
+    },
+    "external": [
+      "react-slick","axios"
+    ],
+    "locales": [
+      "en"
+    ]
+  }
+}

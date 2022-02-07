@@ -1,0 +1,247 @@
+/* .ReviewsWidgetCustom {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.ReviewsWidgetCustom__Label {
+  color: #729fff;
+}
+.ReviewsWidgetCustom__ExtraInfo {
+  background-color: red;
+  color: yellow;
+  margin-left: 5px;
+} */
+/**
+ *  CSS uses the Block Element Modifier naming convention, an example :
+.ReviewsWidgetCustom__ElementName {
+  display: inline-block;
+  font-size: large;
+}
+ * For more information - http://getbem.com/
+ */
+ .reviews {
+  padding: 40px 0 44px;
+}
+
+.reviews__title {
+  color: #23419A;
+  text-align: center;
+  margin: 0 0 62px;
+}
+
+.reviews__title h3 {
+  line-height: 44px;
+  margin-bottom: 11px;
+  color: #333333;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.reviews .rate img {
+  margin-right: 2px;
+}
+
+@media (min-width: 769px) {
+  .reviews .rate .rate-counts,
+  .reviews .rate h6 {
+      font-size: 22px !important;
+  }
+}
+
+.reviews .rate .rate-counts,
+.reviews .rate h6 {
+  display: inline;
+}
+
+.reviews .rate .rate-counts,
+.reviews .rate h6 {
+  color: #00A9E8;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+.reviews .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: initial;
+  -ms-flex-align: initial;
+  align-items: initial;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 0 0 24px;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .reviews .cards {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+  }
+}
+
+@media (min-width: 924px) {
+  .reviews .cards {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  }
+}
+
+.reviews .cards .card {
+  max-width: 258px;
+  min-width: 242px;
+  padding: 0;
+  margin: 0 12px;
+}
+
+@media (min-width: 769px) {
+  .reviews .cards .card {
+      min-width: auto;
+      width: 100%;
+  }
+}
+
+.reviews .cards .card:first-child {
+  margin-left: 8px;
+}
+
+.cards .card__content--reviews {
+  max-width: 258px;
+  height: auto;
+  padding: 16px;
+  border-radius: 5px;
+  letter-spacing: 0.08em;
+  background: #ffffff;
+}
+
+@media (min-width: 769px) {
+  .cards .card__content--reviews {
+      padding: 26px 24px 29px;
+  }
+}
+
+.cards .card__content--reviews .rate {
+  display: inline;
+}
+
+.cards .card__content--reviews .rate .rate-stars {
+  display: inline-block;
+  margin: 0 0 8px;
+}
+
+.cards .card__content--reviews span {
+  color: #23419A;
+  font-family: "Founders Grotesk", sans-serif;
+  padding: 12px 0 0;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: block;
+  letter-spacing: 0.08em;
+}
+
+.cards .card__content--reviews .customer-name {
+  color: #1C1E23;
+  text-transform: capitalize;
+  font-size: 12px;
+  line-height: 17px;
+  border-top: none;
+  vertical-align: top;
+  padding: 0 0 0 7px;
+  margin: 0 0 0 6px;
+  position: relative;
+  display: inline;
+  font-weight: 400;
+}
+
+.cards .card__content--reviews .customer-name::before {
+  content: '';
+  width: 1px;
+  height: 15px;
+  position: absolute;
+  background-color: #D7D7D7;
+  left: 0;
+  top: 0;
+}
+
+.cards .card__content--reviews p {
+  color: #575757;
+  line-height: 110%;
+  padding: 0 0 40px;
+  border-bottom: 1px solid #D7D7D7;
+}
+
+.reviews .cta {
+  text-align: center;
+  margin: 24px 0 0;
+}
+
+.o-button-full {
+  background-color: #23419A;
+  color: #ffffff;
+  height: 45px;
+  width: 156px;
+  display: block;
+  padding: 10px 0 9px;
+  line-height: 21px;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.02em;
+  border: 0;
+  border-radius: 100px;
+}
+
+.reviews .pagination {
+  margin-top: 24px;
+}
+
+.pagination>ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+  -ms-flex-direction: initial;
+  flex-direction: initial;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.reviews .pagination>ul:first-child li,
+.reviews .pagination>ul:last-child li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pagination>ul li a {
+  height: 18px;
+  margin: 0 8.5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 100%;
+  position: relative;
+  color: #231F20;
+}

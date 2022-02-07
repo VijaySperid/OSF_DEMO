@@ -1,0 +1,12 @@
+{
+  "layout": [
+    {
+      "components": [
+        "profile-create-return-request"
+      ],
+      "width": 12
+    }
+  ],
+  "component": "ProfileReturnRequest",
+  "title": "ProfileReturnRequest"
+}

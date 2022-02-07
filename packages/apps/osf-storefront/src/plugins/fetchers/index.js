@@ -1,0 +1,1 @@
+export {getProductNameFetcher} from './productFetcher';

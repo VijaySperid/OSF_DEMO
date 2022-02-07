@@ -1,0 +1,154 @@
+.NewTestWidget01 {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.NewTestWidget01__Label {
+  color: #729fff;
+}
+.NewTestWidget01__ExtraInfo {
+  background-color: red;
+  color: yellow;
+  margin-left: 5px;
+}
+/**
+ *  CSS uses the Block Element Modifier naming convention, an example :
+.NewTestWidget01__ElementName {
+  display: inline-block;
+  font-size: large;
+}
+ * For more information - http://getbem.com/
+ */
+ .meal {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.meal h3 {
+  margin: 0 0 0.25rem 0;
+}
+
+.MealItemDescription {
+  font-style: italic;
+}
+
+.MealItemPrice {
+  margin-top: 0.25rem;
+  font-weight: bold;
+  color: #ad5502;
+  font-size: 1.25rem;
+}
+
+/* car containe rstyle  */
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-content {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 0.5px solid #E7E7E7;
+  position: relative;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+.card-content__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: initial;
+  -ms-flex-align: initial;
+  align-items: initial;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0 16px 24px;
+  margin-top: 65px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+  text-align: left;
+}
+
+.subtitle {
+  color: #23419A;
+  font-size: 10px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 120%;
+  letter-spacing: 0.08em;
+}
+
+.title {
+  color: #1C1E23;
+  margin-bottom: 9.67px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.rate .rate-counts {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #979797;
+  text-align: left;
+}
+
+.price {
+  color: #23419A;
+  line-height: 110%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  margin-top: 8px;
+}
+
+.card .card-content__footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0 16px;
+}
+.card .card-content__footer .o-button-full {
+  margin-bottom: 24px;
+}
+.o-button-full {
+  background-color: #23419A;
+  color: #ffffff;
+  padding: 9px 12px;
+  padding-top: 12px;
+  padding-bottom: 7px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  border: 0;
+  border-radius: 100px;
+  width: 100%;
+}
+.card:hover .card-content__footer {
+  opacity: 1;
+  visibility: visible;
+}
+.card:hover .card-content__body {
+  padding-bottom: 80px;
+}
+

@@ -1,0 +1,81 @@
+.TestWidgetOne {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.TestWidgetOne__Label {
+  color: #729fff;
+}
+.TestWidgetOne__ExtraInfo {
+  background-color: red;
+  color: yellow;
+  margin-left: 5px;
+}
+/**
+ *  CSS uses the Block Element Modifier naming convention, an example :
+.TestWidgetOne__ElementName {
+  display: inline-block;
+  font-size: large;
+}
+ * For more information - http://getbem.com/
+ */
+
+.ProductName {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-size: var(--cc-font-size-xlarge);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.ProductPrice {
+  padding-bottom: 0.5rem;
+}
+.ProductPrice span {
+  color: #333;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 0 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: normal;
+}
+span.pro-code {
+  font-family: "Open Sans Condensed",sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 120%;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #575757;
+  margin-bottom: 16px;
+  display: block;
+  margin-top: 16px;
+}
+
+.ProductVariantOptions__Wrapper {
+  text-align: left;
+  margin-bottom: 1rem
+}
+
+.ProductVariantOptions__OptionName {
+  font-size: var(--cc-font-size-large);
+  font-weight: 500;
+}
+.ProductVariantOptions__Wrapper select{
+  border: 1px solid #e8e9f1 !important;
+   border-radius: 5px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   padding: 7px 8px;
+   width: 234px;
+   height: 38px !important; 
+}
+.ProductVariantOptions__Wrapper select:focus{
+  box-shadow:none;
+}

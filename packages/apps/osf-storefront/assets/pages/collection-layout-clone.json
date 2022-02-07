@@ -1,0 +1,71 @@
+{
+  "layout": [
+    {
+      "displayName": "Adaptive Region",
+      "width": 12,
+      "resources": {
+        "en": {
+          "displayName": "Adaptive Region"
+        }
+      },
+      "slot": "re2000557",
+      "type": "header",
+      "structure": "slot"
+    },
+    {
+      "displayName": "Adaptive Region",
+      "width": 12,
+      "resources": {
+        "en": {
+          "displayName": "Adaptive Region"
+        }
+      },
+      "slot": "re2000560",
+      "type": "main",
+      "structure": "slot"
+    },
+    {
+      "components": [
+        "Custom sort widget",
+        "Product Listing Custom Test"
+      ],
+      "width": 12,
+      "type": "main"
+    },
+    {
+      "components": [
+        "footer"
+      ],
+      "width": 12,
+      "type": "footer"
+    }
+  ],
+  "settings": {
+    "collections": [
+      "AllProducts",
+      "air_conditioner",
+      "home_appliances"
+    ],
+    "pageDisplayName": {
+      "en": {
+        "pageDisplayName": "Collection Layout"
+      }
+    },
+    "sites": [
+      "a7892050c1dev-store.occa.ocs.oraclecloud.com/testOSF"
+    ]
+  },
+  "defaultPage": false,
+  "address": "category",
+  "supportedDevices": [
+    "mobile",
+    "desktop"
+  ],
+  "title": "New Collection Layout Clone",
+  "shortName": "category",
+  "pageTypeDisplayName": {
+    "en": {
+      "pageTypeDisplayName": "category"
+    }
+  }
+}
