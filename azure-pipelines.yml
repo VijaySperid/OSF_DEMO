@@ -50,13 +50,9 @@ jobs:
     displayName: 'PowerShell Script'
     
 schedules:
-
 - cron: "0 4-14/2 * * 1-5"
-
   displayName: Daily build
-
   branches:
-
     include:
-
     - master
+   
