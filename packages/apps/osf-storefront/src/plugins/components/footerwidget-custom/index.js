@@ -24,7 +24,7 @@ const FooterwidgetCustom = props => {
         </picture>
         </a>
         <div className="social-fb-mob">
-          <span><a href="www.facebook.com">Follow us on Facebook</a></span>
+          <span><a href="www.facebook.com">Followw uss on Facebook</a></span>
         </div>
       </div>
       
