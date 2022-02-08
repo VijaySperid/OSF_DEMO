@@ -1,0 +1,50 @@
+# Node.js with React
+# Build a Node.js project that uses React.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+trigger:
+- master
+variables:
+  uiBuild: '/build'
+pool:
+  vmImage: ubuntu-latest
+  # server: server
+jobs:
+- job: generator
+  steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '12.x'
+    displayName: 'Install Node.js'
+  - script: |
+      npm config set @oracle-cx-commerce:cic-osf-app https://oracle-cx-commerce-repository.occa.ocs.oraclecloud.com
+      yarn install
+      # yarn deploy
+    displayName: 'npm install and deploy'
+  # - task: Npm@1
+  #   displayName: 'npm build'
+  #   inputs:
+  #     command: custom
+  #     verbose: false
+  #     customCommand: 'run build'
+# - job: api
+#   steps:
+  - powershell: |
+      # Write your PowerShell commands here.
+      $url = "https://a7892050c1dev-admin.occa.ocs.oraclecloud.com/ccadmin/v1/login"
+      $authHeader = @{
+          'Content-Type'='application/x-www-form-urlencoded'
+          'Authorization'='Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmOWQxNGFmMC03ZThhLTRjNTUtYTQwOC03ZmJlZTMxZmRiNGYiLCJpc3MiOiJhcHBsaWNhdGlvbkF1dGgiLCJleHAiOjE2NTE4MTQ5NzksImlhdCI6MTYyMDI3ODk3OX0=.8XlUtUneM1+TlTftdFF366nrL0kuonB7eYiXMfKDJzU='
+      }
+      $JSON = "grant_type=client_credentials"
+      $pipeline = Invoke-RestMethod -Uri $url -Method Post -Headers $authHeader -Body $JSON
+      Write-Host "Output = $($pipeline | ConvertTo-Json -Depth 99)"
+      $nUrl = "https://a7892050c1dev-admin.occa.ocs.oraclecloud.com/ccadmin/v1/publishingChangeLists/publish"
+      $nauthHeader = @{
+          'Content-Type'='application/json'
+          'Authorization'='Bearer ' + $pipeline.access_token
+          'x-ccasset-language'='en'
+      }
+      $newRess = Invoke-RestMethod -Uri $nUrl -Method Post -Headers $nauthHeader 
+      Write-Host "Output = $($newRess | ConvertTo-Json -Depth 99)"
+    displayName: 'PowerShell Script'
