@@ -49,10 +49,10 @@ jobs:
       Write-Host "Output = $($newRess | ConvertTo-Json -Depth 99)"
     displayName: 'PowerShell Script'
     
-schedules:
-- cron: "0 4-14/2 * * 1-5"
-  displayName: Daily build
-  branches:
-    include:
-    - main
+# schedules:
+# - cron: "0 4-14/2 * * 1-5"
+#   displayName: Daily build
+#   branches:
+#     include:
+#     - main
    
